@@ -9,9 +9,30 @@ Automatically uses different SSH keys, names, and emails for:
 - `~/development/enterprise` - Enterprise projects  
 - `~/development/enterprise/flytap` - Flytap projects (overrides enterprise)
 
+## What's Included
+
+- **setup-git-config.sh** - Configure Git for personal, enterprise, and flytap folders
+- **install.sh** - Master installer for all dotfiles
+- **vscode/** - VSCode settings and extensions list
+- **shell/** - Shell aliases and functions
+- **git/** - Global gitignore patterns
+- **ssh/** - SSH config templates (keys kept local)
+- **tools/** - Prettier, EditorConfig, and other tool configs
+
 ## Setup
 
-### 1. Add SSH Keys (Required First)
+### Option 1: Full Setup (Recommended)
+
+```bash
+cd ~/development/personal/rz_dotfiles
+chmod +x install.sh setup-git-config.sh
+./install.sh
+./setup-git-config.sh
+```
+
+### Option 2: Manual Setup
+
+#### 1. Add SSH Keys (Required First)
 
 Copy your SSH keys to `~/.ssh/`:
 ```bash
@@ -28,7 +49,7 @@ chmod 644 ~/.ssh/rz.pub
 chmod 644 ~/.ssh/rz_rsa.pub
 ```
 
-### 2. Run Setup Script
+#### 2. Run Setup Scripts
 
 ```bash
 cd ~/development/personal/rz_dotfiles
@@ -81,6 +102,18 @@ After running the setup script, you'll have:
 - `~/.gitconfig-flytap` (auto-generated)
 
 **Note:** SSH keys are NOT stored in this repo for security. Keep them local to your machine.
+
+## Customizing Your Config
+
+All dotfiles are templates. Feel free to customize:
+
+- **vscode/settings.json** - Adjust editor settings, theme, extensions
+- **shell/.zsh_aliases** - Add your own aliases and functions
+- **git/.gitignore_global** - Add language/framework-specific patterns
+- **tools/.prettierrc** - Adjust code formatting preferences
+- **tools/.editorconfig** - Set tab sizes and line endings
+
+After modifying any file, run `install.sh` again to update your home directory.
 
 ## Security Notes
 

@@ -1,0 +1,41 @@
+# SSH Config Template
+# Copy this to ~/.ssh/config and update with your settings
+
+# Personal GitHub
+Host github.com-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/rz
+  AddKeysToAgent yes
+  UseKeychain yes
+
+# Enterprise GitHub
+Host github.com-enterprise
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/rz
+  AddKeysToAgent yes
+  UseKeychain yes
+
+# Flytap GitHub
+Host github.com-flytap
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/rz_rsa
+  AddKeysToAgent yes
+  UseKeychain yes
+
+# Default GitHub (uses first key)
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/rz
+  AddKeysToAgent yes
+  UseKeychain yes
+
+# GitLab Example
+# Host gitlab.com
+#   HostName gitlab.com
+#   User git
+#   IdentityFile ~/.ssh/id_ed25519
+#   AddKeysToAgent yes

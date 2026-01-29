@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-vscode.makefile-tools",
+    "GitHub.copilot",
+    "GitLens.gitlens",
+    "ms-azuretools.vscode-docker",
+    "redhat.vscode-yaml",
+    "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "zhuangtongfa.Material-theme",
+    "ms-vscode-remote.remote-ssh"
+  ]
+}
