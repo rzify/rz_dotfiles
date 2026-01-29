@@ -1,0 +1,8 @@
+[user]
+	name = Fábio Fernandes
+[includeIf "gitdir:~/development/enterprise/flytap/"]
+	path = /Users/rz/.gitconfig-flytap
+[includeIf "gitdir:~/development/enterprise/"]
+	path = /Users/rz/.gitconfig-enterprise
+[includeIf "gitdir:~/development/personal/"]
+	path = /Users/rz/.gitconfig-personal
